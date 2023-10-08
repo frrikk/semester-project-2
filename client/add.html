@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="menu-container"></nav>
+    <hr />
+    <div class="add-container">
+      <h1>Add product</h1>
+      <div class="message"></div>
+
+      <form>
+        <div class="name">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Product name" />
+        </div>
+        <div class="price">
+          <label for="price">Price</label>
+          <input id="price" type="number" placeholder="Price" />
+        </div>
+        <div class="description">
+          <label for="description">Description</label>
+          <input
+            id="description"
+            type="text"
+            placeholder="Product description"
+          />
+        </div>
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <script src="./js/add.js" type="module"></script>
+  </body>
+</html>

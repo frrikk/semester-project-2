@@ -1,0 +1,246 @@
+.container {
+  padding: 15px;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  #nav-logo{
+    padding: 10px 20px;
+    background-color: rgba(61, 22, 2, 0.17);
+    border-radius: 100px;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__home {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__misc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+    & > * {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+// Hero section
+.hero {
+  &__container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 30px;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Intro section
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+
+  h1 {
+    font-size: clamp(4rem, 5vw, 7rem);
+  }
+
+  p {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    color: #7a7a7a;
+    font-weight: 300;
+  }
+
+  a {
+    margin-top: 10px;
+    color: black;
+  }
+
+}
+
+
+hr {
+  margin: 0 0 50px 0;
+  opacity: 0.2;
+}
+
+// Hero section
+.hero {
+  &__container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 30px;
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #7a7a7a;
+    font-weight: 300;
+    margin-bottom: 50px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    transition: ease 0.5s;
+    position: relative;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      border-radius: 35px;
+      margin-bottom: 50px;
+      max-width: 600px;
+      min-height: 300px;
+      background: #ffffff;
+      box-shadow: 0px 0px 50px -17px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 30px;
+      transition: ease 0.2s;
+      position: relative;
+
+      &:hover {
+        transform: scale(1.005) rotate(.5deg);
+        cursor: pointer;
+      }
+    }
+
+    &--image {
+      border-radius: 35px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--details {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      max-height: 100px;
+      position: relative;
+      margin-top: 20px;
+
+      .title {
+        margin-top: 5px;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      .price {
+        font-size: clamp(1rem, 5vw, 2rem);
+        opacity: 0.6;
+      }
+    }
+  }
+    button {
+      border: none;
+      background: none;
+      position: absolute;
+      bottom: 130px;
+      right: 25px;
+      cursor: pointer;
+      transition: ease 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+  .edit-product {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    transition: ease .3s;
+
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+  }
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+$color1: hsl(155, 90%, 55%);
+$color2: hsl(219, 95%, 55%);
+$bg-size: 400%;
+
+.heading-animation {
+  background: linear-gradient(90deg, $color1, $color2, $color1) 0 0 / 400% 100%;
+
+  animation: moving-text 20s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes moving-text {
+  to {
+    background-position: 400% 0;
+  }
+}
+
+// Cart
+.cart-total {
+  margin-top: 100px;
+  font-size: 2rem;
+}

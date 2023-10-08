@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="menu-container nav"></nav>
+
+    <hr />
+    <div class="profile-container">
+      <div class="message"></div>
+      <section class="login-container">
+        <div class="box">
+          <i id="box-closed" class="fa-solid fa-box"></i>
+        </div>
+        <h1>Welcome! Please login</h1>
+
+        <form>
+          <div class="username">
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Username" />
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </div>
+
+    <script src="./js/profile.js" type="module"></script>
+  </body>
+</html>
